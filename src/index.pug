@@ -4,8 +4,34 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Жилой комплекс "Невский парк в Полюстрово"
     body 
-        h1 Hello Parcel
-        h2 Hello GIThub
-        script(src='./main.js')
+        .firstscreen 
+            .wrapper
+                .firstscreen_promo 
+                    .firstscreen_header
+                        .firstscreen_logo
+                            img.logo(src="./image/first-screen__logo.svg", alt="logo")
+                        .firstscreen_menu
+                            ul.firstscreen_list 
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="#") О комплексе    
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="#") Район
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="#") Каталог квартир
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="#") Ипотека
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="#") Контакты
+                    .firstscreen_center
+                        h2.firstscreen_center__title Жилой комплекс в историческом центре
+                        img.firstscreen_center__logo(src='image/mouse.png', alt='mouse')
+                        .firstscreen_center__footer
+                            .firstscreen_center__placeholder
+                                img.firstscreen_center__footerlogo(src="./image/placeholder.png", alt="placeholder")
+                                span.firstscreen_center__footertext Апрельская улица д. 10
+                            .firstscreen_center_phone    
+                                img.firstscreen_center__footerlogo(src="./image/phone-call.png", alt="phone-call")
+                                span.firstscreen_center__footertext 8 (812) 123-45-67
+        script(src="main.js") 
