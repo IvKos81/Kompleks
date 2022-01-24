@@ -169,6 +169,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    transition: top 1s ease-out 0.5s;
+
 }
 
 .testimonials_info_point {
@@ -457,6 +460,18 @@ body {
     margin-top: 180px;
 }
 
+.cta_title2 {
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    color: #D4C17F;
+}
+
 .cta_block2 {
     width: 1100px;
     height: auto;
@@ -504,7 +519,9 @@ body {
     align-items: flex-start;
 }
 
-.footer_list {
+.footer_list1,
+.footer_list2,
+.footer_list3 {
     list-style: none;
 }
 
@@ -530,4 +547,41 @@ body {
 
 .gold {
     color: #D4C17F;
+}
+
+
+// extra CSS-settings for animation
+
+.firstscreen_logo, .cta_title, .cta_text, .footer_logo, .footer_list1 {
+    transform: translateX(-1000px);
+}
+
+.firstscreen_menu, .cta_form, .footer_list2, .footer_list3 {
+    transform: translateX(1000px);
+}
+
+// animation classes
+
+.anim00, .anim0, .anim1, .anim2, .anim3, .anim4, .anim5, .anim6, .anim7, .anim8, .anim9, .anim10, .anim11  {
+    opacity: 0;
+}
+
+.animfromleft { 
+    transform: translateX(0);
+    transition: ease-in 3s; 
+}
+
+.animfromright { 
+    transform: translateX(0);
+    transition: ease-in 4s; 
+}
+
+.animfromleftfast { 
+    transform: translateX(0);
+    transition: ease-in 1s; 
+}
+
+.animfromrightfast { 
+    transform: translateX(0);
+    transition: ease-in 2s; 
 }

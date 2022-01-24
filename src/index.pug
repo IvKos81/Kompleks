@@ -4,6 +4,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js") 
         title Жилой комплекс "Невский парк в Полюстрово"
     body 
         .firstscreen 
@@ -24,7 +25,7 @@ html(lang="en")
                                     a.firstscreen_link(href="#") Ипотека
                                 li.firstscreen_point 
                                     a.firstscreen_link(href="#") Контакты
-                    .firstscreen_center
+                    .firstscreen_center.anim0
                         h2.firstscreen_center__title Жилой комплекс в историческом центре
                         img.firstscreen_center__logo(src='image/mouse.png', alt='mouse')
                         .firstscreen_center__footer
@@ -39,16 +40,16 @@ html(lang="en")
                 .second 
                     span.bignumber_text II    
                 .testimonials_info 
-                    .testimonials_info_point 
+                    .testimonials_info_point.anim1 
                         img.point_image(src="./image/bench.png", alt="" width='80', height='80')
                         p.point_text Рядом исторические парки и скверы
-                    .testimonials_info_point 
+                    .testimonials_info_point.anim2 
                         img.point_image(src="./image/building.png", alt="" width='80', height='80')
                         p.point_text Полностью обустроенный
-                    .testimonials_info_point 
+                    .testimonials_info_point.anim3 
                         img.point_image(src="./image/fountain.png", alt="" width='80', height='80')
                         p.point_text 10 фонтанов на территории
-                    .testimonials_info_point 
+                    .testimonials_info_point.anim4 
                         img.point_image(src="./image/bicycle.png", alt="" width='80', height='80')
                         p.point_text 6 км велодорожек
         .apartments 
@@ -57,13 +58,13 @@ html(lang="en")
                     span.bignumber_text III   
                 .apartments_gallery
                     h2.apartments_title Наши квартиры
-                    .apartments_card.card1 
+                    .apartments_card.card1.anim5 
                         span.apartments_text Лофт — 3 этажа
-                    .apartments_card.card2 
+                    .apartments_card.card2.anim6 
                         span.apartments_text Лофт — 3 этажа
-                    .apartments_card.card3 
+                    .apartments_card.card3.anim7 
                         span.apartments_text Лофт — 2 этажа
-                    .apartments_card.card4 
+                    .apartments_card.card4.anim8 
                         span.apartments_text Лофт — 2 этажа
         .cta 
             .wrapper 
@@ -79,19 +80,19 @@ html(lang="en")
             .wrapper
                 .fourth
                     span.bignumber_text IV
-                .videocontainer
+                .videocontainer.anim9
                     video.promovideo(src="./image/video1.mp4", controls='controls', width='640', height='360', loop='loop', poster='./image/Rectangle1.jpg') 
         .maps
             .wrapper
                 .fifth
                     span.bignumber_text V
-                .mapscontainer
+                .mapscontainer.anim10
                     h2.map_title Район на карте
                     img.map_picture(src="./image/map.jpg", alt="map", width='1100', height='auto') 
         .cta2 
             .wrapper 
-                .cta_block2 
-                    h2.cta_title Есть вопросы?
+                .cta_block2.anim11
+                    h2.cta_title2 Есть вопросы?
                     form.cta_form2(action="", method="get")
                         p.form_field.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                         input.form_field.cta_name(type="text" placeholder='Ваше имя')
@@ -99,8 +100,9 @@ html(lang="en")
                         button.cta_button.correctY(type='button') Посмотреть район
         .footer 
             .footercontainer
-                img.logo(src="./image/first-screen__logo.svg", alt="logo")
-                ul.footer_list 
+                a(href="#") 
+                    img.footer_logo(src="./image/first-screen__logo.svg", alt="logo")
+                ul.footer_list1 
                     li.footer_point 
                         a.footer_link(href="#") О комплексе    
                     li.footer_point 
@@ -111,7 +113,7 @@ html(lang="en")
                         a.footer_link(href="#") Ипотека
                     li.footer_point 
                         a.footer_link(href="#") Контакты                           
-                ul.footer_list 
+                ul.footer_list2 
                     li.footer_point 
                         a.footer_link(href="#") О комплексе    
                     li.footer_point 
@@ -122,7 +124,7 @@ html(lang="en")
                         a.footer_link(href="#") Ипотека
                     li.footer_point 
                         a.footer_link(href="#") Контакты                           
-                ul.footer_list 
+                ul.footer_list3 
                     li.footer_point 
                         a.footer_link(href="#") Адрес: Апрельская улица д.10    
                     li.footer_point 
