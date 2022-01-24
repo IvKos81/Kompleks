@@ -34,4 +34,111 @@ html(lang="en")
                             .firstscreen_center_phone    
                                 img.firstscreen_center__footerlogo(src="./image/phone-call.png", alt="phone-call")
                                 span.firstscreen_center__footertext 8 (812) 123-45-67
+        .testimonials 
+            .wrapper
+                .second 
+                    span.bignumber_text II    
+                .testimonials_info 
+                    .testimonials_info_point 
+                        img.point_image(src="./image/bench.png", alt="" width='80', height='80')
+                        p.point_text Рядом исторические парки и скверы
+                    .testimonials_info_point 
+                        img.point_image(src="./image/building.png", alt="" width='80', height='80')
+                        p.point_text Полностью обустроенный
+                    .testimonials_info_point 
+                        img.point_image(src="./image/fountain.png", alt="" width='80', height='80')
+                        p.point_text 10 фонтанов на территории
+                    .testimonials_info_point 
+                        img.point_image(src="./image/bicycle.png", alt="" width='80', height='80')
+                        p.point_text 6 км велодорожек
+        .apartments 
+            .wrapper
+                .third
+                    span.bignumber_text III   
+                .apartments_gallery
+                    h2.apartments_title Наши квартиры
+                    .apartments_card.card1 
+                        span.apartments_text Лофт — 3 этажа
+                    .apartments_card.card2 
+                        span.apartments_text Лофт — 3 этажа
+                    .apartments_card.card3 
+                        span.apartments_text Лофт — 2 этажа
+                    .apartments_card.card4 
+                        span.apartments_text Лофт — 2 этажа
+        .cta 
+            .wrapper 
+                .cta_block 
+                    h2.cta_title Хотите посмотреть?
+                    p.cta_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                    form.cta_form(action="", method="get")
+                        input.form_field.cta_name(type="text" placeholder='Ваше имя')
+                        input.form_field.cta_phone(type="tel" placeholder='Ваш телефон')    
+                        p.form_field.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                        button.cta_button.correctX(type='button') Посмотреть район
+        .video 
+            .wrapper
+                .fourth
+                    span.bignumber_text IV
+                .videocontainer
+                    video.promovideo(src="./image/video1.mp4", controls='controls', width='640', height='360', loop='loop', poster='./image/Rectangle1.jpg') 
+        .maps
+            .wrapper
+                .fifth
+                    span.bignumber_text V
+                .mapscontainer
+                    h2.map_title Район на карте
+                    img.map_picture(src="./image/map.jpg", alt="map", width='1100', height='auto') 
+        .cta2 
+            .wrapper 
+                .cta_block2 
+                    h2.cta_title Есть вопросы?
+                    form.cta_form2(action="", method="get")
+                        p.form_field.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                        input.form_field.cta_name(type="text" placeholder='Ваше имя')
+                        input.form_field.cta_phone(type="tel" placeholder='Ваш телефон')    
+                        button.cta_button.correctY(type='button') Посмотреть район
+        .footer 
+            .footercontainer
+                img.logo(src="./image/first-screen__logo.svg", alt="logo")
+                ul.footer_list 
+                    li.footer_point 
+                        a.footer_link(href="#") О комплексе    
+                    li.footer_point 
+                        a.footer_link(href="#") Район
+                    li.footer_point 
+                        a.footer_link(href="#") Каталог квартир
+                    li.footer_point 
+                        a.footer_link(href="#") Ипотека
+                    li.footer_point 
+                        a.footer_link(href="#") Контакты                           
+                ul.footer_list 
+                    li.footer_point 
+                        a.footer_link(href="#") О комплексе    
+                    li.footer_point 
+                        a.footer_link(href="#") Район
+                    li.footer_point 
+                        a.footer_link(href="#") Каталог квартир
+                    li.footer_point 
+                        a.footer_link(href="#") Ипотека
+                    li.footer_point 
+                        a.footer_link(href="#") Контакты                           
+                ul.footer_list 
+                    li.footer_point 
+                        a.footer_link(href="#") Адрес: Апрельская улица д.10    
+                    li.footer_point 
+                        a.footer_link(href="#") Телефон: 8 (812) 123-45-67
+                    li.footer_point 
+                        a.footer_link(href="#") Отдел продаж: 10:00 - 20:00
+                    li.footer_point 
+                        a.footer_link(href="#") E-mail: #[span.gold vip@housevip.ru] 
+                    li.footer_point.social 
+                        a.footer_link(href="#")
+                            img(src="./image/youtube.png", alt="youtube", width='29', height='20')
+                        a.footer_link(href="#")
+                            img(src="./image/vk.png", alt="vk", width='35', height='20')
+                        a.footer_link(href="#")
+                            img(src="./image/fb.png", alt="fb", width='20', height='20')
+                        a.footer_link(href="#")
+                            img(src="./image/instagram.png", alt="instagram", width='20', height='20')                        
+                
         script(src="main.js") 
