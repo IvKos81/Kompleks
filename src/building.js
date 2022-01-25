@@ -6,38 +6,33 @@ $(document).ready(function(){
     $('.firstscreen_logo').addClass('animfromleftfast')
     $('.firstscreen_menu').addClass('animfromrightfast')
     $('.firstscreen_center').fadeTo(6000, 1);
-        console.log('scrolltop>50')
 })
 
 // Анимация при скроллинге страницы
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 880) {
         $('.anim1').fadeTo(1000, 1);
-        $('.anim2').fadeTo(2000, 1);
-        $('.anim3').fadeTo(4000, 1);
-        $('.anim4').fadeTo(6000, 1);
+        $('.description_title').addClass('animfromleftfast');
+        $('.description_text').addClass('animfromrightfast');
     };
 
-    if ($(this).scrollTop() > 1200) {
-        $('.anim5').fadeTo(2000, 1);
-        $('.anim6').fadeTo(4000, 1);
-        $('.anim7').fadeTo(6000, 1);
-        $('.anim8').fadeTo(8000, 1);
+    if ($(this).scrollTop() > 1550) {
+        $('.anim2').fadeTo(1000, 1);
+        $('.outer_title').addClass('animfromleftfast');
+        $('.outer_text').addClass('animfromrightfast');
     };
 
-    if ($(this).scrollTop() > 2000) {
-        $('.cta_title').addClass('animfromleftfast');
-        $('.cta_text').addClass('animfromleftfast');
-        $('.cta_form').addClass('animfromrightfast');
+    if ($(this).scrollTop() > 2270) {
+        $('.anim3').fadeTo(1000, 1);
+        $('.inner_title').addClass('animfromrightfast');
+        $('.inner_text').addClass('animfromleftfast');
     };
 
-    if ($(this).scrollTop() > 2500) {
-        $('.anim9').fadeTo(2000, 1);
-    };
-
-    if ($(this).scrollTop() > 3150) {
-        $('.anim10').fadeTo(2000, 1);
+    if ($(this).scrollTop() > 2800) {
+        $('.anim4').fadeTo(1000, 1);
+        $('.smarthouse_title').addClass('animfromrightfast');
+        $('.smarthouse_text').addClass('animfromleftfast');
     };
 
     if ($(this).scrollTop() > 3500) {
@@ -49,3 +44,13 @@ $(window).scroll(function() {
     };
 
 })
+
+// подсветка выбора на изображении
+
+$('#mapzk').maphilight({
+    fill: true,
+    fillColor: '2252a9',
+    fillOpacity: 0.5,
+    stroke: true,
+    strokeColor: 'ffccaa' 
+});

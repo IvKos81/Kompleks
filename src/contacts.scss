@@ -107,112 +107,21 @@ body {
     color: #D4C17F;
 }
 
-// Blocks
-.description,
-.outer,
-.inner,
-.smarthouse,
-.last {
-    margin-top: 120px;
-}
-
-.last_block {
-    width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-// Titles
-.description_title,
-.outer_title,
-.inner_title,
-.smarthouse_title {
-    font-family: Playfair Display, serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #D4C17F;
-}
-
-.last_title {
-    font-family: Playfair Display, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #D4C17F;
-}
-
-.last_link {
-    font-family: Playfair Display, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #D4C17F;
-
-    display: block;
+.firstscreen_center_link {
     text-decoration: none;
-    width: 400px;
-    height: 64px;
+    display: block;
     padding: 5px;
-
-    margin-top: 20px;
-}
-
-.last_link:hover {
+    margin-right: 35px;
+    color: #ffffff;
     cursor: pointer;
-    background-color: #D4C17F;
-    color: #242B33;
-}
 
-// Images
-
-.description_image,
-.inner_image {
-    float: left;
-    margin-right: 50px;
-}
-
-.outer_image,
-.smarthouse_image {
-    float: right;
-    margin-left: 50px;
-}
-
-.last_image {
-    margin: 0 auto;
-}
-
-// Text
-.description_text,
-.inner_text {
-    word-wrap: wrap;
-    text-align: justify;
-    margin-right: 20px;
-}
-
-.outer_text,
-.smarthouse_text {
-    word-wrap: wrap;
-    text-align: justify;
-    margin-left: 20px;
-}
-
-// clearfix
-.clearfix {
-    content: '';
-    clear: both;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 
 // footer
@@ -278,19 +187,11 @@ body {
 // extra CSS-settings for animation
 
 .firstscreen_logo,
-.description_title,
-.outer_text,
-.inner_title,
-.smarthouse_text,
 .footer_logo, .footer_list1 {
     transform: translateX(-1200px);
 }
 
 .firstscreen_menu, 
-.description_text,
-.outer_title,
-.inner_text,
-.smarthouse_title,
 .footer_list2, .footer_list3 {
     transform: translateX(1200px);
 }

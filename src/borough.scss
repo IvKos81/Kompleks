@@ -81,44 +81,12 @@ body {
     background-color: #ffffff;
 }
 
-.firstscreen_center {
-    width: 582px;
-    height: auto;
-    margin-top: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.firstscreen_center__logo {
-    margin-top: 100px;
-}
-
-.firstscreen_center__title {
-    font-family: Playfair Display, serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #D4C17F;
-}
-
 // Blocks
-.description,
-.outer,
-.inner,
-.smarthouse,
-.last {
-    margin-top: 120px;
+.description {
+    margin-top: 50px;
 }
 
-.last_block {
-    width: 700px;
-    margin: 0 auto;
+.description_block {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,10 +94,7 @@ body {
 }
 
 // Titles
-.description_title,
-.outer_title,
-.inner_title,
-.smarthouse_title {
+.description_title {
     font-family: Playfair Display, serif;
     font-size: 48px;
     font-style: normal;
@@ -140,66 +105,16 @@ body {
     color: #D4C17F;
 }
 
-.last_title {
-    font-family: Playfair Display, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #D4C17F;
-}
+// Images
 
-.last_link {
-    font-family: Playfair Display, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #D4C17F;
-
-    display: block;
-    text-decoration: none;
-    width: 400px;
-    height: 64px;
-    padding: 5px;
-
+.description_image {
     margin-top: 20px;
 }
 
-.last_link:hover {
-    cursor: pointer;
-    background-color: #D4C17F;
-    color: #242B33;
-}
-
-// Images
-
-.description_image,
-.inner_image {
-    float: left;
-    margin-right: 50px;
-}
-
-.outer_image,
-.smarthouse_image {
-    float: right;
-    margin-left: 50px;
-}
-
-.last_image {
-    margin: 0 auto;
-}
-
 // Text
-.description_text,
-.inner_text {
+.description_text {
     word-wrap: wrap;
     text-align: justify;
-    margin-right: 20px;
 }
 
 .outer_text,

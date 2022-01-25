@@ -1,0 +1,80 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")                
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.2.3/jquery.maphilight.js")
+        title Ипотека
+    body
+        .firstscreen 
+            .wrapper
+                .firstscreen_promo 
+                    .firstscreen_header
+                        .firstscreen_logo
+                            a(href="./index.pug") 
+                                img.logo(src="./image/first-screen__logo.svg", alt="logo")
+                        .firstscreen_menu
+                            ul.firstscreen_list 
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="./building.pug") О комплексе    
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="./borough.pug") Район
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="./blocks.pug") Каталог квартир
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="./finances.pug") Ипотека
+                                li.firstscreen_point 
+                                    a.firstscreen_link(href="./contacts.pug") Контакты
+                    .firstscreen_center.anim0
+                        h2.firstscreen_center__title Финансы пока поют романсы,
+                        h2.firstscreen_center__title С ипотекой все сложно,
+                        h2.firstscreen_center__title Ну а рассрочек пока не предусмотрено!
+        .footer 
+            .footercontainer
+                a(href="#") 
+                    img.footer_logo(src="./image/first-screen__logo.svg", alt="logo")
+                ul.footer_list1 
+                    li.footer_point 
+                        a.footer_link(href="./building.pug") О комплексе    
+                    li.footer_point 
+                        a.footer_link(href="./borough.pug") Район
+                    li.footer_point 
+                        a.footer_link(href="./blocks.pug") Каталог квартир
+                    li.footer_point 
+                        a.footer_link(href="./finances.pug") Ипотека
+                    li.footer_point 
+                        a.footer_link(href="#") Контакты                           
+                ul.footer_list2 
+                    li.footer_point 
+                        a.footer_link(href="./building.pug") О комплексе    
+                    li.footer_point 
+                        a.footer_link(href="./borough.pug") Район
+                    li.footer_point 
+                        a.footer_link(href="./blocks.pug") Каталог квартир
+                    li.footer_point 
+                        a.footer_link(href="./izumrud.pug") Корпус "Изумруд"
+                    li.footer_point 
+                        a.footer_link(href="./sapfir.pug") Корпус "Сапфир"                           
+                ul.footer_list3
+                    li.footer_point 
+                        a.footer_link(href="#") Адрес: Апрельская улица д.10    
+                    li.footer_point 
+                        a.footer_link(href="#") Телефон: 8 (812) 123-45-67
+                    li.footer_point 
+                        a.footer_link(href="#") Отдел продаж: 10:00 - 20:00
+                    li.footer_point 
+                        a.footer_link(href="#") E-mail: #[span.gold vip@housevip.ru] 
+                    li.footer_point.social 
+                        a.footer_link(href="#")
+                            img(src="./image/youtube.png", alt="youtube", width='29', height='20')
+                        a.footer_link(href="#")
+                            img(src="./image/vk.png", alt="vk", width='35', height='20')
+                        a.footer_link(href="#")
+                            img(src="./image/fb.png", alt="fb", width='20', height='20')
+                        a.footer_link(href="#")
+                            img(src="./image/instagram.png", alt="instagram", width='20', height='20')                        
+        script(src="finances.js") 
+                    
+
