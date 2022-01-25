@@ -1,4 +1,4 @@
-import './main.scss';
+import './building.scss';
 
 // Анимация при загрузке страницы
 
@@ -40,7 +40,7 @@ $(window).scroll(function() {
         $('.anim10').fadeTo(2000, 1);
     };
 
-    if ($(this).scrollTop() > 4130) {
+    if ($(this).scrollTop() > 3500) {
         $('.anim11').fadeTo(2000, 1);
         $('.footer_logo').addClass('animfromleft')
         $('.footer_list3').addClass('animfromright')
