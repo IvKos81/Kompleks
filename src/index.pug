@@ -72,9 +72,9 @@ html(lang="en")
                     h2.cta_title Хотите посмотреть?
                     p.cta_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
                     form.cta_form(action="", method="get")
-                        input.form_field.cta_name(type="text" placeholder='Ваше имя')
-                        input.form_field.cta_phone(type="tel" placeholder='Ваш телефон')    
-                        p.form_field.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                        input.cta_name(type="text", placeholder='Ваше имя', pattern='[А-Яа-яЁё]')
+                        input.cta_phone(type="tel", placeholder='Ваш телефон', pattern='[0-9]{10}')    
+                        p.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                         button.cta_button.correctX(type='button') Посмотреть район
         .video 
             .wrapper
@@ -94,10 +94,20 @@ html(lang="en")
                 .cta_block2.anim11
                     h2.cta_title2 Есть вопросы?
                     form.cta_form2(action="", method="get")
-                        p.form_field.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
-                        input.form_field.cta_name(type="text" placeholder='Ваше имя')
-                        input.form_field.cta_phone(type="tel" placeholder='Ваш телефон')    
-                        button.cta_button.correctY(type='button') Посмотреть район
+                        p.cta_hint2 *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                        input.cta_name2(type="text", placeholder='Ваше имя', pattern='[А-Яа-яЁё]')
+                        input.cta_phone2(type="tel", placeholder='Ваш телефон', pattern='[0-9]{10}')    
+                        button.cta_button2.correctY(type='button') Посмотреть район
+        .popup
+            h1.popup_title 
+            p.popup_text 
+            button.popup_button Закрыть
+        .popup_timer
+            h1.popup_title УНИКАЛЬНОЕ ПРЕДЛОЖЕНИЕ!
+            p.popup_text Квартира за 1 рубль. Звоните!!! 
+            p.popup_text Не можете дозвониться?
+            p.popup_text Ну проблемы индейцев шерифа не волнуют...
+            button.timer_button Закрыть
         .footer 
             .footercontainer
                 a(href="#") 

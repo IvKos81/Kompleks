@@ -106,6 +106,64 @@ body {
     text-align: center;
     color: #D4C17F;
 }
+// Popup timer
+.popup_timer {
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    background-color: #181718;
+    border: 10px solid orange;
+    display: none;
+    border: 10px solid blue;
+    text-align: center;
+}
+
+.popup_title {
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    
+    color: #D4C17F;
+}
+
+.popup_text {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+
+    color: #ffffff
+}
+
+.popup_button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #D4C17F;
+    padding: 10px;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.timer_button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #D4C17F;
+    padding: 10px;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
 
 // footer
 

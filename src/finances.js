@@ -21,3 +21,21 @@ $(window).scroll(function() {
     };
 
 })
+
+
+// Popup по таймеру
+
+let popupTitle = document.querySelector('.popup_title');
+let popupText = document.querySelector('.popup_text');
+
+let showPopupOnTime = () => {
+    document.querySelector('.popup_timer').style.display = 'block'
+}
+
+let timerButton = document.querySelector('.timer_button');
+timerButton.addEventListener('click', (evt)=>{
+    evt.preventDefault;
+    document.querySelector('.popup_timer').style.display = 'none'
+})
+
+setTimeout(showPopupOnTime, 3000);

@@ -49,3 +49,53 @@ $(window).scroll(function() {
     };
 
 })
+
+// Всплывающее окно
+
+let personName = document.querySelector('.cta_name');
+let personPhone = document.querySelector('.cta_phone');
+let formButton = document.querySelector('.cta_button');
+let personName2 = document.querySelector('.cta_name2');
+let personPhone2 = document.querySelector('cta_phone2');
+let formButton2 = document.querySelector('.cta_button2');
+let popupButton = document.querySelector('.popup_button');
+let popupTitle = document.querySelector('.popup_title');
+let popupText = document.querySelector('.popup_text');
+let popup = document.querySelector('.popup');
+
+formButton.addEventListener('click', (evt)=>{
+    evt.preventDefault;
+    // popup.style.opacity = '100'
+    // popup.style.zIndex = '1'
+    popup.style.display = 'block'
+    popupTitle.innerHTML = 'Уважаемый гражданин '+personName.value+'. Мы сейчас проверим ваш номер телефона: '+personPhone.value
+    popupText.innerHTML = 'Хотим Вам заодно сообщить, что мы прикольнулись и внесли ваш телефон во все рекламные базы данных. Так что ожидайте в ближайшее время много новых и интересных предложений!'
+})
+
+formButton2.addEventListener('click', (evt)=>{
+    evt.preventDefault;
+    // popup.style.opacity = '100'
+    // popup.style.zIndex = '1'
+    popup.style.display = 'block'
+    popupTitle.innerHTML = 'Уважаемый гражданин '+personName2.value+'. Мы сейчас проверим ваш номер телефона: '+personPhone2.value+'!'
+    popupText.innerHTML = 'Хотим Вам заодно сообщить, что мы прикольнулись и внесли ваш телефон во все рекламные базы данных. Так что ожидайте в ближайшее время много новых и интересных предложений!'
+})
+
+popupButton.addEventListener('click', (evt)=>{
+    evt.preventDefault;
+    popup.style.display = 'none'
+})
+
+// Popup по таймеру
+
+let showPopupOnTime = () => {
+    document.querySelector('.popup_timer').style.display = 'block'
+}
+
+let timerButton = document.querySelector('.timer_button');
+timerButton.addEventListener('click', (evt)=>{
+    evt.preventDefault;
+    document.querySelector('.popup_timer').style.display = 'none'
+})
+
+setTimeout(showPopupOnTime, 7000);
