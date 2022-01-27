@@ -6,7 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")                
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.2.3/jquery.maphilight.js")
-        title Корпус "Изумруд"
+        title Этажи
     body
         .firstscreen 
             .wrapper
@@ -27,15 +27,34 @@ html(lang="en")
                                     a.firstscreen_link(href="./finances.pug") Ипотека
                                 li.firstscreen_point 
                                     a.firstscreen_link(href="./contacts.pug") Контакты
-        .izumrud.anim0
-            .wrapper 
-                .izumrud_block
-                    h2.izumrud__title Жилой комплекс "Crystall HOUSE"
-                    h2.izumrud__title_second Корпус "Изумруд"
-                    h2.izumrud__title_third Выберите предпочитаемый этаж
-                    img.izumrud__map(src='image/blocks/izumrud.jpg', alt='panorama', width='820px', usemap='#izum')
-                    map(name="izum")
-                        area(shape="poly", coords="215,166,545,75,595,163,597,181,549,108,211,195,214,177", href="./level.html", alt="level_13") 
+                    .firstscreen_center.anim0
+                        h2.firstscreen_center__title План этажа
+                        h3.firstscreen_center__title Выберите интересующую вас квартиру
+                        img.firstscreen_center__map(src='image/flats/mainplan.jpg', alt='mainplan' width='976px' usemap='#flats' id='flatsplan')
+                        map(name="flats")
+                            area(shape="rect", coords="217,273,396,497", href="./flat1_1.html", alt="1-1")
+                            area(shape="rect", coords="398,271,577,498", href="./flat1_2.html", alt="1-2")
+                            area(shape="rect", coords="580,271,758,498", href="./flat1_3.html", alt="1-3")
+                            area(shape="poly", coords="1,62,205,56,208,1,397,0,398,228,262,225,263,220,217,220,217,182,34,181,35,212,1,215", href="./flat2_1.html", alt="2-1")
+                            area(shape="poly", coords="29,499,29,222,40,207,39,188,216,182,215,224,263,226,262,269,217,269,214,494", href="./flat2_2.html", alt="2-2")
+                            area(shape="poly", coords="720,230,719,262,759,265,763,469,968,467,967,325,942,318,942,184,759,185,759,224,720,222", href="./flat2_3.html", alt="2-3") 
+                            area(shape="poly", coords="580,-1,755,-3,765,25,943,26,942,181,755,180,756,221,578,221", href="./flat3_1.html", alt="3-1")
+                    .firstscreen_center.anim0     
+                        ul.footer_list1
+                            li.footer_point 
+                                a.footer_link(href="./flat1_1.pug") Квартира 1-1     
+                            li.footer_point 
+                                a.footer_link(href="./flat1_2.pug") Квартира 1-2
+                            li.footer_point 
+                                a.footer_link(href="./flat1_3.pug") Квартира 1-3
+                            li.footer_point 
+                                a.footer_link(href="./flat2_1.pug") Квартира 2-1
+                            li.footer_point 
+                                a.footer_link(href="./flat2_2.pug") Квартира 2-2
+                            li.footer_point 
+                                a.footer_link(href="./flat2_3.pug") Квартира 2-2
+                            li.footer_point 
+                                a.footer_link(href="./flat3_1.pug") Квартира 3-1
         .footer 
             .footercontainer
                 a(href="#") 
@@ -80,6 +99,6 @@ html(lang="en")
                             img(src="./image/fb.png", alt="fb", width='20', height='20')
                         a.footer_link(href="#")
                             img(src="./image/instagram.png", alt="instagram", width='20', height='20')                        
-        script(src="izumrud.js") 
+        script(src="level.js") 
                     
 

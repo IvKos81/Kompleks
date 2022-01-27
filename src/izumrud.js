@@ -22,8 +22,18 @@ $(window).scroll(function() {
 
 })
 
-// Всплывающее окно
+// // Всплывающее окно
 
-$('.izumrud__map').click(function(){
-    alert("КВАРТИРЫ ЕЩЕ НЕ ВЫСТАВЛЕНЫ НА ПРОДАЖУ")
-})
+// $('.izumrud__map').click(function(){
+//     alert("КВАРТИРЫ ЕЩЕ НЕ ВЫСТАВЛЕНЫ НА ПРОДАЖУ")
+// })
+
+// подсветка выбора на изображении
+
+$('.izumrud__map').maphilight({
+    fill: true,
+    fillColor: '2252a9',
+    fillOpacity: 0.5,
+    stroke: true,
+    strokeColor: 'ffccaa' 
+});

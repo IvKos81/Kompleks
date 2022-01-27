@@ -6,7 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")                
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.2.3/jquery.maphilight.js")
-        title Корпус "Изумруд"
+        title Квартира 1-1
     body
         .firstscreen 
             .wrapper
@@ -27,15 +27,10 @@ html(lang="en")
                                     a.firstscreen_link(href="./finances.pug") Ипотека
                                 li.firstscreen_point 
                                     a.firstscreen_link(href="./contacts.pug") Контакты
-        .izumrud.anim0
-            .wrapper 
-                .izumrud_block
-                    h2.izumrud__title Жилой комплекс "Crystall HOUSE"
-                    h2.izumrud__title_second Корпус "Изумруд"
-                    h2.izumrud__title_third Выберите предпочитаемый этаж
-                    img.izumrud__map(src='image/blocks/izumrud.jpg', alt='panorama', width='820px', usemap='#izum')
-                    map(name="izum")
-                        area(shape="poly", coords="215,166,545,75,595,163,597,181,549,108,211,195,214,177", href="./level.html", alt="level_13") 
+                    .firstscreen_center.anim0
+                        h2.firstscreen_center__title Жилой комплекс "Crystall HOUSE"
+                        h3.firstscreen_center__title Однокомнатная квартира 1-3
+                        img.firstscreen_center__map(src='image/flats/1-3.jpg', alt='1_3.flat' width='194px') 
         .footer 
             .footercontainer
                 a(href="#") 
@@ -80,6 +75,6 @@ html(lang="en")
                             img(src="./image/fb.png", alt="fb", width='20', height='20')
                         a.footer_link(href="#")
                             img(src="./image/instagram.png", alt="instagram", width='20', height='20')                        
-        script(src="izumrud.js") 
+        script(src="flat1-3.js") 
                     
 
