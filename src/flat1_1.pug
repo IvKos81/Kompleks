@@ -32,13 +32,15 @@ html(lang="en")
                         h3.firstscreen_center__title Однокомнатная квартира 1-1
                         img.firstscreen_center__map(src='image/flats/1-1.jpg', alt='1_1.flat' width='194px', id='flat1-1', usemap='#flat1_1')
                         map(name="flat1_1")
-                            area(shape="rect", coords="58,10,98,108", href="#", alt="coridor", title='Коридор')
-                            area(shape="rect", coords="12,115,80,190", href="#", alt="kitchen", title='Кухня')
-                            area(shape="rect", coords="14,87,54,110", href="#", alt="toilet", title='Туалет')
-                            area(shape="rect", coords="13,36,53,79", href="#", alt="bathroom", title='Ванная')
-                            area(shape="rect", coords="13,11,53,32", href="#", alt="storage room", title='Темная комната') 
-                            area(shape="rect", coords="12,204,180,230", href="#", alt="balcony", title='Балкон-лоджия') 
-                            area(shape="poly", coords="101,13,181,12,181,191,82,190,84,108,101,100,101,54", href="#", alt="room", title='Комната') 
+                            area(shape="rect", coords="58,10,98,108", href="#", alt="coridor", title='Коридор', id='coridor')
+                            area(shape="rect", coords="12,115,80,190", href="#", alt="kitchen", title='Кухня', id='kitchen')
+                            area(shape="rect", coords="14,87,54,110", href="#", alt="toilet", title='Туалет', id='toilet')
+                            area(shape="rect", coords="13,36,53,79", href="#", alt="bathroom", title='Ванная', id='bathroom')
+                            area(shape="rect", coords="13,11,53,32", href="#", alt="storage room", title='Темная комната', id='storageroom') 
+                            area(shape="rect", coords="12,204,180,230", href="#", alt="balcony", title='Балкон-лоджия', id='balcony') 
+                            area(shape="poly", coords="101,13,181,12,181,191,82,190,84,108,101,100,101,54", href="#", alt="livingroom", title='Гостинная', id='livingroom')
+                    .flat_description 
+                        p.flat_description_text
 
         .footer 
             .footercontainer

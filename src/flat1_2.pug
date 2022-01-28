@@ -30,7 +30,17 @@ html(lang="en")
                     .firstscreen_center.anim0
                         h2.firstscreen_center__title Жилой комплекс "Crystall HOUSE"
                         h3.firstscreen_center__title Однокомнатная квартира 1-2
-                        img.firstscreen_center__map(src='image/flats/1-2.jpg', alt='1_2.flat' width='194px') 
+                        img.firstscreen_center__map(src='image/flats/1-2.jpg', alt='1_2.flat', width='194px', usemap='#flat1_2', id='flat1-2') 
+                        map(name="flat1_2")
+                            area(shape="", coords="", href="#", alt="coridor", title='Коридор', id='coridor')
+                            area(shape="", coords="", href="#", alt="kitchen", title='Кухня', id='kitchen')
+                            area(shape="", coords="", href="#", alt="toilet", title='Туалет', id='toilet')
+                            area(shape="", coords="", href="#", alt="bathroom", title='Ванная', id='bathroom')
+                            area(shape="", coords="", href="#", alt="storage room", title='Темная комната', id='storageroom') 
+                            area(shape="", coords="", href="#", alt="balcony", title='Балкон-лоджия', id='balcony') 
+                            area(shape="", coords="", href="#", alt="livingroom", title='Гостинная', id='livingroom')
+                        .flat_description 
+                            p.flat_description_text
         .footer 
             .footercontainer
                 a(href="#") 

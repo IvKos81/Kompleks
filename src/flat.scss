@@ -107,6 +107,26 @@ body {
     color: #D4C17F;
 }
 
+// flat_description
+
+.flat_description {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: none;
+}
+
+.flat_description_text {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #ffffff
+}
+
 // footer
 
 .footer {
