@@ -4,6 +4,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js") 
         title Жилой комплекс "Crystall HOUSE"
     body 
@@ -81,14 +82,15 @@ html(lang="en")
                 .fourth
                     span.bignumber_text IV
                 .videocontainer.anim9
-                    video.promovideo(src="./image/video1.mp4", controls='controls', width='640', height='360', loop='loop', poster='./image/Rectangle1.jpg') 
+                    video.promovideo(src="./image/video1.mp4", controls='controls', width='640', height='360', loop='loop', poster='./image/Rectangle1.jpg')
         .maps
             .wrapper
                 .fifth
                     span.bignumber_text V
                 .mapscontainer.anim10
                     h2.map_title Район на карте
-                    img.map_picture(src="./image/map.jpg", alt="map", width='1100', height='auto') 
+                    .leafletmaps(id='mymap') 
+                    //- img.map_picture(src="./image/map.jpg", alt="map", width='1100', height='auto') 
         .cta2 
             .wrapper 
                 .cta_block2.anim11

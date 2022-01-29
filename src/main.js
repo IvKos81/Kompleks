@@ -1,4 +1,5 @@
 import './main.scss';
+import L from 'leaflet'
 
 // Анимация при загрузке страницы
 
@@ -40,7 +41,7 @@ $(window).scroll(function() {
         $('.anim10').fadeTo(2000, 1);
     };
 
-    if ($(this).scrollTop() > 4100) {
+    if ($(this).scrollTop() > 4000) {
         $('.anim11').fadeTo(2000, 1);
         $('.footer_logo').addClass('animfromleft')
         $('.footer_list3').addClass('animfromright')
@@ -99,3 +100,9 @@ timerButton.addEventListener('click', (evt)=>{
 })
 
 setTimeout(showPopupOnTime, 7000);
+
+// установка Leaflet Карт
+
+var map = L.map('mymap').setView([51.505, 0.09], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+var marker = L.marker([51.5, -0.09]).addTo(map);
