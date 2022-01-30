@@ -99,3 +99,13 @@ livingroom.addEventListener('mouseover', (evt) => {
 livingroom.addEventListener('mouseleave', (evt) => {
     flDescr.style.display = 'none'
 });
+
+// подсветка выбора на изображении
+
+$('#flat1-2').maphilight({
+    fill: true,
+    fillColor: '2252a9',
+    fillOpacity: 0.5,
+    stroke: true,
+    strokeColor: 'ffccaa' 
+});

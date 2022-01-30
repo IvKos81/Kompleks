@@ -279,6 +279,12 @@ body {
     color: #ffffff;
 }
 
+.apartments_link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 // cta
 
 .cta {
@@ -527,7 +533,7 @@ body {
 
 // popup
 
-.popup, .popup_timer {
+.popup, .popup2, .popup_timer {
     width: 600px;
     height: 300px;
     position: fixed;
@@ -542,6 +548,10 @@ body {
     text-align: center;
 }
 
+.popup2 {
+    border: 10px solid #23e75e;
+}
+
 .popup_timer {
     width: 600px;
     height: 300px;
@@ -554,7 +564,8 @@ body {
     border: 10px solid blue;
 }
 
-.popup_title {
+.popup_title,
+.popup_title2 {
     font-family: Playfair Display;
     font-size: 24px;
     font-style: normal;
@@ -565,7 +576,8 @@ body {
     color: #D4C17F;
 }
 
-.popup_text {
+.popup_text,
+.popup_text2 {
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
@@ -576,7 +588,8 @@ body {
     color: #ffffff
 }
 
-.popup_button {
+.popup_button,
+.popup_button2 {
     display: block;
     width: 200px;
     height: 50px;
@@ -667,12 +680,12 @@ body {
 
 .animfromleft { 
     transform: translateX(0);
-    transition: ease-in 3s; 
+    transition: ease-in 2s; 
 }
 
 .animfromright { 
     transform: translateX(0);
-    transition: ease-in 4s; 
+    transition: ease-in 2.5s; 
 }
 
 .animfromleftfast { 
@@ -682,5 +695,5 @@ body {
 
 .animfromrightfast { 
     transform: translateX(0);
-    transition: ease-in 2s; 
+    transition: ease-in 1.3s; 
 }

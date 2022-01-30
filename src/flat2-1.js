@@ -49,7 +49,7 @@ let flDescrText = document.querySelector('.flat_description_text');
 
 coridor.addEventListener('mouseover', (evt) => {
     flDescr.style.display = 'block'
-    flDescrText.innerHTML = 'Большой коридор, площадью 5 м2. Напольное покрытие - керамогранит. Стены оклеены изностойкими обоями под окраску. Размеры коридора позволяют установить внутри него встроенный шкаф';
+    flDescrText.innerHTML = 'Большой коридор. Напольное покрытие - керамогранит. Стены оклеены изностойкими обоями под окраску. Размеры коридора позволяют установить внутри него встроенный шкаф';
 });
 coridor.addEventListener('mouseleave', (evt) => {
    flDescr.style.display = 'none'
@@ -57,7 +57,7 @@ coridor.addEventListener('mouseleave', (evt) => {
 
 kitchen.addEventListener('mouseover', (evt) => {
     flDescr.style.display = 'block'
-    flDescrText.innerHTML = 'Светлая кухня, площадью 7м2. Напольное покрытие - керамическая плитка. Стены, по желанию, могут быть отделаны обоями под покраску, кафельной плиткой или декоративной штукатуркой.';
+    flDescrText.innerHTML = 'Светлая кухня. Напольное покрытие - керамическая плитка. Стены, по желанию, могут быть отделаны обоями под покраску, кафельной плиткой или декоративной штукатуркой.';
 });
 kitchen.addEventListener('mouseleave', (evt) => {
    flDescr.style.display = 'none'
@@ -65,7 +65,7 @@ kitchen.addEventListener('mouseleave', (evt) => {
 
 toilet.addEventListener('mouseover', (evt) => {
     flDescr.style.display = 'block'
-    flDescrText.innerHTML = 'Раздельный санузел. Площадь - 1,2 м2. Согласно предлагаемой отделке устанавливается обычный унитаз со сливным бачком. По желанию клиента может быть установлен встроенный унитаз-инсталляция, а также возможно укомплектование гигиеническим душем и маленькой раковиной.';
+    flDescrText.innerHTML = 'Раздельный санузел. Согласно предлагаемой отделке устанавливается обычный унитаз со сливным бачком. По желанию клиента может быть установлен встроенный унитаз-инсталляция, а также возможно укомплектование гигиеническим душем и маленькой раковиной.';
 });
 toilet.addEventListener('mouseleave', (evt) => {
    flDescr.style.display = 'none'
@@ -73,7 +73,7 @@ toilet.addEventListener('mouseleave', (evt) => {
 
 bathroom.addEventListener('mouseover', (evt) => {
     flDescr.style.display = 'block'
-    flDescrText.innerHTML = 'Ванная комната, площадью 2,6 м2. Повышенная гидроизоляция. Отделка - кафельная плитка. Установлена ванная размерами 170х50 см. По желанию заказчика может быть смонтирована душевая кабина. ';
+    flDescrText.innerHTML = 'Ванная комната. Повышенная гидроизоляция. Отделка - кафельная плитка. Установлена ванная размерами 170х50 см. По желанию заказчика может быть смонтирована душевая кабина. ';
 });
 bathroom.addEventListener('mouseleave', (evt) => {
    flDescr.style.display = 'none'
@@ -81,7 +81,7 @@ bathroom.addEventListener('mouseleave', (evt) => {
 
 storageroom.addEventListener('mouseover', (evt) => {
     flDescr.style.display = 'block'
-    flDescrText.innerHTML = 'Небольшая кладовая комната, площадью 1,1м2. Может быть использована как комната для установки стиральной машины или как встроенная гардеробная. Напольное покрытие - керамогранит, стены отделаны обоями под окраску. Дополнительно в комнате выведена электрическая розетка.';
+    flDescrText.innerHTML = 'Небольшая кладовая комната. Может быть использована как комната для установки стиральной машины или как встроенная гардеробная. Напольное покрытие - керамогранит, стены отделаны обоями под окраску. Дополнительно в комнате выведена электрическая розетка.';
 });
 storageroom.addEventListener('mouseleave', (evt) => {
    flDescr.style.display = 'none'
@@ -105,7 +105,7 @@ bedroom.addEventListener('mouseleave', (evt) => {
 
 livingroom.addEventListener('mouseover', (evt) => {
     flDescr.style.display = 'block'
-    flDescrText.innerHTML = 'Большая светлая комната, площадью 20м2. Стены отделаны обоями под покраску. Напольное покрытие - ламинат 34 класса. Потолок - оштукатурен и окрашен в три слоя.';
+    flDescrText.innerHTML = 'Большая светлая комната. Стены отделаны обоями под покраску. Напольное покрытие - ламинат 34 класса. Потолок - оштукатурен и окрашен в три слоя.';
 });
 livingroom.addEventListener('mouseleave', (evt) => {
     flDescr.style.display = 'none'

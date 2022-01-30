@@ -49,7 +49,7 @@ html(lang="en")
                         p.point_text Полностью обустроенный
                     .testimonials_info_point.anim3 
                         img.point_image(src="./image/fountain.png", alt="" width='80', height='80')
-                        p.point_text 10 фонтанов на территории
+                        p.point_text Фонтаны во дворах
                     .testimonials_info_point.anim4 
                         img.point_image(src="./image/bicycle.png", alt="" width='80', height='80')
                         p.point_text 6 км велодорожек
@@ -59,24 +59,28 @@ html(lang="en")
                     span.bignumber_text III   
                 .apartments_gallery
                     h2.apartments_title Наши квартиры
-                    .apartments_card.card1.anim5 
-                        span.apartments_text Лофт — 3 этажа
-                    .apartments_card.card2.anim6 
-                        span.apartments_text Лофт — 3 этажа
+                    .apartments_card.card1.anim5
+                        a.apartments_link(href="flat1_1.pug")  
+                            span.apartments_text Однокомнатные апартаменты Лофт
+                    .apartments_card.card2.anim6
+                        a.apartments_link(href="flat1_2.pug")  
+                            span.apartments_text Однокомнатные квартиры Хайтек
                     .apartments_card.card3.anim7 
-                        span.apartments_text Лофт — 2 этажа
+                        a.apartments_link(href="flat2_1.pug")  
+                            span.apartments_text Двухкомнатные квартиры Модерн
                     .apartments_card.card4.anim8 
-                        span.apartments_text Лофт — 2 этажа
+                        a.apartments_link(href="flat3_1.pug")  
+                            span.apartments_text Трехкомнатные апартаменты Прованс
         .cta 
             .wrapper 
                 .cta_block 
                     h2.cta_title Хотите посмотреть?
-                    p.cta_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                    p.cta_text Вы можете посетить наш шоу-рум или записаться на экскурсию в любой день. Оставьте ваши данные и наш менеджер свяжется с вами в любое удобное для вас время.  
                     form.cta_form(action="", method="get")
                         input.cta_name(type="text", placeholder='Ваше имя', pattern='[А-Яа-яЁё]')
                         input.cta_phone(type="tel", placeholder='Ваш телефон', pattern='[0-9]{10}')    
                         p.cta_hint *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
-                        button.cta_button.correctX(type='button') Посмотреть район
+                        button.cta_button.correctX(type='button') Хочу
         .video 
             .wrapper
                 .fourth
@@ -99,11 +103,15 @@ html(lang="en")
                         p.cta_hint2 *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                         input.cta_name2(type="text", placeholder='Ваше имя', pattern='[А-Яа-яЁё]')
                         input.cta_phone2(type="tel", placeholder='Ваш телефон', pattern='[0-9]{10}')    
-                        button.cta_button2.correctY(type='button') Посмотреть район
+                        button.cta_button2.correctY(type='button') Жду звонка
         .popup
             h1.popup_title 
             p.popup_text 
             button.popup_button Закрыть
+        .popup2
+            h1.popup_title2 
+            p.popup_text2 
+            button.popup_button2 Закрыть
         .popup_timer
             h1.popup_title УНИКАЛЬНОЕ ПРЕДЛОЖЕНИЕ!
             p.popup_text Квартира за 1 рубль. Звоните!!! 
