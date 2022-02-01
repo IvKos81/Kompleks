@@ -1,12 +1,8 @@
 import './borough.scss';
-
-// Анимация при загрузке страницы
-
-$(document).ready(function(){
-    $('.firstscreen_logo').addClass('animfromleftfast')
-    $('.firstscreen_menu').addClass('animfromrightfast')
-    $('.firstscreen_center').fadeTo(6000, 1);
-})
+import './template/header.scss';
+import './template/footer.scss';
+import './animation.scss';
+import './animation.js';
 
 // Анимация при скроллинге страницы
 

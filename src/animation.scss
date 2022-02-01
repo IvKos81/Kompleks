@@ -1,0 +1,35 @@
+// extra CSS-settings for animation
+
+.firstscreen_logo, .cta_title, .cta_text, .footer_logo, .footer_list1 {
+    transform: translateX(-1000px);
+}
+
+.firstscreen_menu, .cta_form, .footer_list2, .footer_list3 {
+    transform: translateX(1000px);
+}
+
+// animation classes
+
+.anim00, .anim0, .anim1, .anim2, .anim3, .anim4, .anim5, .anim6, .anim7, .anim8, .anim9, .anim10, .anim11  {
+    opacity: 0;
+}
+
+.animfromleft { 
+    transform: translateX(0);
+    transition: ease-in 2s; 
+}
+
+.animfromright { 
+    transform: translateX(0);
+    transition: ease-in 2.5s; 
+}
+
+.animfromleftfast { 
+    transform: translateX(0);
+    transition: ease-in 1s; 
+}
+
+.animfromrightfast { 
+    transform: translateX(0);
+    transition: ease-in 1.3s; 
+}

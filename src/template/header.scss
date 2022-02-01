@@ -1,0 +1,29 @@
+.firstscreen_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstscreen_list {
+    list-style: none;
+}
+
+.firstscreen_point {
+    display: inline-block;
+}
+
+.firstscreen_link {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    margin-right: 35px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.firstscreen_link:hover {
+    color: #000000;
+    background-color: #ffffff;
+}

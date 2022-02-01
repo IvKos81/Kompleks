@@ -1,4 +1,8 @@
 import './contacts.scss';
+import './template/header.scss';
+import './template/footer.scss';
+import './animation.scss';
+import './animation.js';
 
 // Анимация при загрузке страницы
 

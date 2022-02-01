@@ -11,21 +11,7 @@ html(lang="en")
         .firstscreen 
             .wrapper
                 .firstscreen_promo 
-                    .firstscreen_header
-                        .firstscreen_logo
-                            img.logo(src="./image/first-screen__logo.svg", alt="logo")
-                        .firstscreen_menu
-                            ul.firstscreen_list 
-                                li.firstscreen_point 
-                                    a.firstscreen_link(href="./building.pug") О комплексе    
-                                li.firstscreen_point 
-                                    a.firstscreen_link(href="./borough.pug") Район
-                                li.firstscreen_point 
-                                    a.firstscreen_link(href="./blocks.pug") Каталог квартир
-                                li.firstscreen_point 
-                                    a.firstscreen_link(href="./finances.pug") Ипотека
-                                li.firstscreen_point 
-                                    a.firstscreen_link(href="./contacts.pug") Контакты
+                    include template/_header.pug
                     .firstscreen_center.anim0
                         h2.firstscreen_center__title Жилой комплекс в историческом центре
                         img.firstscreen_center__logo(src='image/mouse.png', alt='mouse')
@@ -94,7 +80,6 @@ html(lang="en")
                 .mapscontainer.anim10
                     h2.map_title Район на карте
                     .leafletmaps(id='mymap') 
-                    //- img.map_picture(src="./image/map.jpg", alt="map", width='1100', height='auto') 
         .cta2 
             .wrapper 
                 .cta_block2.anim11
@@ -118,49 +103,6 @@ html(lang="en")
             p.popup_text Не можете дозвониться?
             p.popup_text Ну проблемы индейцев шерифа не волнуют...
             button.timer_button Закрыть
-        .footer 
-            .footercontainer
-                a(href="#") 
-                    img.footer_logo(src="./image/first-screen__logo.svg", alt="logo")
-                ul.footer_list1 
-                    li.footer_point 
-                        a.footer_link(href="./building.pug") О комплексе    
-                    li.footer_point 
-                        a.footer_link(href="./borough.pug") Район
-                    li.footer_point 
-                        a.footer_link(href="./level.pug") Планы этажей
-                    li.footer_point 
-                        a.footer_link(href="./finances.pug") Ипотека
-                    li.footer_point 
-                        a.footer_link(href="./contacts.pug") Контакты                           
-                ul.footer_list2 
-                    li.footer_point 
-                        a.footer_link(href="./building.pug") О комплексе    
-                    li.footer_point 
-                        a.footer_link(href="./borough.pug") Район
-                    li.footer_point 
-                        a.footer_link(href="./blocks.pug") Каталог квартир
-                    li.footer_point 
-                        a.footer_link(href="./izumrud.pug") Корпус "Изумруд"
-                    li.footer_point 
-                        a.footer_link(href="./sapfir.pug") Корпус "Сапфир"                           
-                ul.footer_list3(id='contacts')
-                    li.footer_point 
-                        a.footer_link(href="#") Адрес: Апрельская улица д.10    
-                    li.footer_point 
-                        a.footer_link(href="#") Телефон: 8 (812) 123-45-67
-                    li.footer_point 
-                        a.footer_link(href="#") Отдел продаж: 10:00 - 20:00
-                    li.footer_point 
-                        a.footer_link(href="#") E-mail: #[span.gold vip@housevip.ru] 
-                    li.footer_point.social 
-                        a.footer_link(href="#")
-                            img(src="./image/youtube.png", alt="youtube", width='29', height='20')
-                        a.footer_link(href="#")
-                            img(src="./image/vk.png", alt="vk", width='35', height='20')
-                        a.footer_link(href="#")
-                            img(src="./image/fb.png", alt="fb", width='20', height='20')
-                        a.footer_link(href="#")
-                            img(src="./image/instagram.png", alt="instagram", width='20', height='20')                        
-                
+        include template/_extra_info.pug 
+        include template/_footer.pug
         script(src="main.js") 

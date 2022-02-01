@@ -1,11 +1,11 @@
 import './sapfir.scss';
-
-// Анимация при загрузке страницы
+import './template/header.scss';
+import './template/footer.scss';
+import './animation.scss';
+import './animation.js';
 
 $(document).ready(function(){
-    $('.firstscreen_logo').addClass('animfromleftfast')
-    $('.firstscreen_menu').addClass('animfromrightfast')
-    $('.anim0').fadeTo(3000, 1);
+    $('.anim0').fadeTo(1500, 1);
 })
 
 // Анимация при скроллинге страницы

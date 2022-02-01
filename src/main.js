@@ -1,14 +1,10 @@
 import './main.scss';
-import L from 'leaflet'
+import './template/header.scss';
+import './template/footer.scss';
+import './animation.scss';
 
-// Анимация при загрузке страницы
-
-$(document).ready(function(){
-    $('.firstscreen_logo').addClass('animfromleftfast')
-    $('.firstscreen_menu').addClass('animfromrightfast')
-    $('.firstscreen_center').fadeTo(6000, 1);
-        console.log('scrolltop>50')
-})
+import L from 'leaflet';
+import './animation.js';
 
 // Анимация при скроллинге страницы
 
